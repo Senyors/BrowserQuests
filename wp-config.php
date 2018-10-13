@@ -29,7 +29,7 @@ define('DB_USER', 'browserq_browque');
 define('DB_PASSWORD', 'cTS(9(p6f8');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '109.199.110.108');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -88,4 +88,5 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
+define('WP_CACHE', true); $currenthost = $_SERVER['HTTP_HOST']; $mypos = strpos($currenthost, 'localhost'); if ($mypos === false) { define('WP_HOME','https://www.browserquests.com'); define('WP_SITEURL','https://www.browserquests.com'); } else { define('WP_HOME','http://localhost/bq'); define('WP_SITEURL','http://localhost/bq'); }
 require_once(ABSPATH . 'wp-settings.php');
